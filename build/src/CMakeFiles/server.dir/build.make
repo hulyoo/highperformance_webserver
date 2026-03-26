@@ -69,10 +69,94 @@ include src/CMakeFiles/server.dir/progress.make
 # Include the compile flags for this target's objects.
 include src/CMakeFiles/server.dir/flags.make
 
+src/CMakeFiles/server.dir/AsyncLogging.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/AsyncLogging.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/AsyncLogging.cc
+src/CMakeFiles/server.dir/AsyncLogging.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/server.dir/AsyncLogging.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/AsyncLogging.cc.o -MF CMakeFiles/server.dir/AsyncLogging.cc.o.d -o CMakeFiles/server.dir/AsyncLogging.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/AsyncLogging.cc
+
+src/CMakeFiles/server.dir/AsyncLogging.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/AsyncLogging.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/AsyncLogging.cc > CMakeFiles/server.dir/AsyncLogging.cc.i
+
+src/CMakeFiles/server.dir/AsyncLogging.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/AsyncLogging.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/AsyncLogging.cc -o CMakeFiles/server.dir/AsyncLogging.cc.s
+
+src/CMakeFiles/server.dir/LogFile.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/LogFile.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/LogFile.cc
+src/CMakeFiles/server.dir/LogFile.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object src/CMakeFiles/server.dir/LogFile.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/LogFile.cc.o -MF CMakeFiles/server.dir/LogFile.cc.o.d -o CMakeFiles/server.dir/LogFile.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/LogFile.cc
+
+src/CMakeFiles/server.dir/LogFile.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/LogFile.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/LogFile.cc > CMakeFiles/server.dir/LogFile.cc.i
+
+src/CMakeFiles/server.dir/LogFile.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/LogFile.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/LogFile.cc -o CMakeFiles/server.dir/LogFile.cc.s
+
+src/CMakeFiles/server.dir/LogStream.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/LogStream.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/LogStream.cc
+src/CMakeFiles/server.dir/LogStream.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object src/CMakeFiles/server.dir/LogStream.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/LogStream.cc.o -MF CMakeFiles/server.dir/LogStream.cc.o.d -o CMakeFiles/server.dir/LogStream.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/LogStream.cc
+
+src/CMakeFiles/server.dir/LogStream.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/LogStream.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/LogStream.cc > CMakeFiles/server.dir/LogStream.cc.i
+
+src/CMakeFiles/server.dir/LogStream.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/LogStream.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/LogStream.cc -o CMakeFiles/server.dir/LogStream.cc.s
+
+src/CMakeFiles/server.dir/Logging.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/Logging.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/Logging.cc
+src/CMakeFiles/server.dir/Logging.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object src/CMakeFiles/server.dir/Logging.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/Logging.cc.o -MF CMakeFiles/server.dir/Logging.cc.o.d -o CMakeFiles/server.dir/Logging.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/Logging.cc
+
+src/CMakeFiles/server.dir/Logging.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/Logging.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/Logging.cc > CMakeFiles/server.dir/Logging.cc.i
+
+src/CMakeFiles/server.dir/Logging.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/Logging.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/Logging.cc -o CMakeFiles/server.dir/Logging.cc.s
+
+src/CMakeFiles/server.dir/Thread.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/Thread.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/Thread.cc
+src/CMakeFiles/server.dir/Thread.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object src/CMakeFiles/server.dir/Thread.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/Thread.cc.o -MF CMakeFiles/server.dir/Thread.cc.o.d -o CMakeFiles/server.dir/Thread.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/Thread.cc
+
+src/CMakeFiles/server.dir/Thread.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/Thread.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/Thread.cc > CMakeFiles/server.dir/Thread.cc.i
+
+src/CMakeFiles/server.dir/Thread.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/Thread.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/Thread.cc -o CMakeFiles/server.dir/Thread.cc.s
+
+src/CMakeFiles/server.dir/TimeStamp.cc.o: src/CMakeFiles/server.dir/flags.make
+src/CMakeFiles/server.dir/TimeStamp.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/TimeStamp.cc
+src/CMakeFiles/server.dir/TimeStamp.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object src/CMakeFiles/server.dir/TimeStamp.cc.o"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/TimeStamp.cc.o -MF CMakeFiles/server.dir/TimeStamp.cc.o.d -o CMakeFiles/server.dir/TimeStamp.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/TimeStamp.cc
+
+src/CMakeFiles/server.dir/TimeStamp.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/server.dir/TimeStamp.cc.i"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jl/share/cc_program/HighPerformance_WebServer/src/TimeStamp.cc > CMakeFiles/server.dir/TimeStamp.cc.i
+
+src/CMakeFiles/server.dir/TimeStamp.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/server.dir/TimeStamp.cc.s"
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jl/share/cc_program/HighPerformance_WebServer/src/TimeStamp.cc -o CMakeFiles/server.dir/TimeStamp.cc.s
+
 src/CMakeFiles/server.dir/test.cc.o: src/CMakeFiles/server.dir/flags.make
 src/CMakeFiles/server.dir/test.cc.o: /home/jl/share/cc_program/HighPerformance_WebServer/src/test.cc
 src/CMakeFiles/server.dir/test.cc.o: src/CMakeFiles/server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object src/CMakeFiles/server.dir/test.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object src/CMakeFiles/server.dir/test.cc.o"
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT src/CMakeFiles/server.dir/test.cc.o -MF CMakeFiles/server.dir/test.cc.o.d -o CMakeFiles/server.dir/test.cc.o -c /home/jl/share/cc_program/HighPerformance_WebServer/src/test.cc
 
 src/CMakeFiles/server.dir/test.cc.i: cmake_force
@@ -85,15 +169,27 @@ src/CMakeFiles/server.dir/test.cc.s: cmake_force
 
 # Object files for target server
 server_OBJECTS = \
+"CMakeFiles/server.dir/AsyncLogging.cc.o" \
+"CMakeFiles/server.dir/LogFile.cc.o" \
+"CMakeFiles/server.dir/LogStream.cc.o" \
+"CMakeFiles/server.dir/Logging.cc.o" \
+"CMakeFiles/server.dir/Thread.cc.o" \
+"CMakeFiles/server.dir/TimeStamp.cc.o" \
 "CMakeFiles/server.dir/test.cc.o"
 
 # External object files for target server
 server_EXTERNAL_OBJECTS =
 
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/AsyncLogging.cc.o
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/LogFile.cc.o
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/LogStream.cc.o
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/Logging.cc.o
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/Thread.cc.o
+/home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/TimeStamp.cc.o
 /home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/test.cc.o
 /home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/build.make
 /home/jl/share/cc_program/HighPerformance_WebServer/bin/server: src/CMakeFiles/server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/jl/share/cc_program/HighPerformance_WebServer/bin/server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable /home/jl/share/cc_program/HighPerformance_WebServer/bin/server"
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

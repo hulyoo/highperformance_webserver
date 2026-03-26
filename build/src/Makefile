@@ -130,6 +130,150 @@ server/fast:
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+AsyncLogging.o: AsyncLogging.cc.o
+.PHONY : AsyncLogging.o
+
+# target to build an object file
+AsyncLogging.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/AsyncLogging.cc.o
+.PHONY : AsyncLogging.cc.o
+
+AsyncLogging.i: AsyncLogging.cc.i
+.PHONY : AsyncLogging.i
+
+# target to preprocess a source file
+AsyncLogging.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/AsyncLogging.cc.i
+.PHONY : AsyncLogging.cc.i
+
+AsyncLogging.s: AsyncLogging.cc.s
+.PHONY : AsyncLogging.s
+
+# target to generate assembly for a file
+AsyncLogging.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/AsyncLogging.cc.s
+.PHONY : AsyncLogging.cc.s
+
+LogFile.o: LogFile.cc.o
+.PHONY : LogFile.o
+
+# target to build an object file
+LogFile.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogFile.cc.o
+.PHONY : LogFile.cc.o
+
+LogFile.i: LogFile.cc.i
+.PHONY : LogFile.i
+
+# target to preprocess a source file
+LogFile.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogFile.cc.i
+.PHONY : LogFile.cc.i
+
+LogFile.s: LogFile.cc.s
+.PHONY : LogFile.s
+
+# target to generate assembly for a file
+LogFile.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogFile.cc.s
+.PHONY : LogFile.cc.s
+
+LogStream.o: LogStream.cc.o
+.PHONY : LogStream.o
+
+# target to build an object file
+LogStream.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogStream.cc.o
+.PHONY : LogStream.cc.o
+
+LogStream.i: LogStream.cc.i
+.PHONY : LogStream.i
+
+# target to preprocess a source file
+LogStream.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogStream.cc.i
+.PHONY : LogStream.cc.i
+
+LogStream.s: LogStream.cc.s
+.PHONY : LogStream.s
+
+# target to generate assembly for a file
+LogStream.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/LogStream.cc.s
+.PHONY : LogStream.cc.s
+
+Logging.o: Logging.cc.o
+.PHONY : Logging.o
+
+# target to build an object file
+Logging.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Logging.cc.o
+.PHONY : Logging.cc.o
+
+Logging.i: Logging.cc.i
+.PHONY : Logging.i
+
+# target to preprocess a source file
+Logging.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Logging.cc.i
+.PHONY : Logging.cc.i
+
+Logging.s: Logging.cc.s
+.PHONY : Logging.s
+
+# target to generate assembly for a file
+Logging.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Logging.cc.s
+.PHONY : Logging.cc.s
+
+Thread.o: Thread.cc.o
+.PHONY : Thread.o
+
+# target to build an object file
+Thread.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Thread.cc.o
+.PHONY : Thread.cc.o
+
+Thread.i: Thread.cc.i
+.PHONY : Thread.i
+
+# target to preprocess a source file
+Thread.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Thread.cc.i
+.PHONY : Thread.cc.i
+
+Thread.s: Thread.cc.s
+.PHONY : Thread.s
+
+# target to generate assembly for a file
+Thread.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Thread.cc.s
+.PHONY : Thread.cc.s
+
+TimeStamp.o: TimeStamp.cc.o
+.PHONY : TimeStamp.o
+
+# target to build an object file
+TimeStamp.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimeStamp.cc.o
+.PHONY : TimeStamp.cc.o
+
+TimeStamp.i: TimeStamp.cc.i
+.PHONY : TimeStamp.i
+
+# target to preprocess a source file
+TimeStamp.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimeStamp.cc.i
+.PHONY : TimeStamp.cc.i
+
+TimeStamp.s: TimeStamp.cc.s
+.PHONY : TimeStamp.s
+
+# target to generate assembly for a file
+TimeStamp.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimeStamp.cc.s
+.PHONY : TimeStamp.cc.s
+
 test.o: test.cc.o
 .PHONY : test.o
 
@@ -163,6 +307,24 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... server"
+	@echo "... AsyncLogging.o"
+	@echo "... AsyncLogging.i"
+	@echo "... AsyncLogging.s"
+	@echo "... LogFile.o"
+	@echo "... LogFile.i"
+	@echo "... LogFile.s"
+	@echo "... LogStream.o"
+	@echo "... LogStream.i"
+	@echo "... LogStream.s"
+	@echo "... Logging.o"
+	@echo "... Logging.i"
+	@echo "... Logging.s"
+	@echo "... Thread.o"
+	@echo "... Thread.i"
+	@echo "... Thread.s"
+	@echo "... TimeStamp.o"
+	@echo "... TimeStamp.i"
+	@echo "... TimeStamp.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
