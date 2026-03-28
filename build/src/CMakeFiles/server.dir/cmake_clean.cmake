@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "/home/jl/share/cc_program/HighPerformance_WebServer/bin/server.pdb"
   "CMakeFiles/server.dir/AsyncLogging.cc.o"
   "CMakeFiles/server.dir/AsyncLogging.cc.o.d"
+  "CMakeFiles/server.dir/CurrentThread.cc.o"
+  "CMakeFiles/server.dir/CurrentThread.cc.o.d"
   "CMakeFiles/server.dir/LogFile.cc.o"
   "CMakeFiles/server.dir/LogFile.cc.o.d"
   "CMakeFiles/server.dir/LogStream.cc.o"

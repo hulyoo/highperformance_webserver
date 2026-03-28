@@ -154,6 +154,30 @@ AsyncLogging.cc.s:
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/AsyncLogging.cc.s
 .PHONY : AsyncLogging.cc.s
 
+CurrentThread.o: CurrentThread.cc.o
+.PHONY : CurrentThread.o
+
+# target to build an object file
+CurrentThread.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/CurrentThread.cc.o
+.PHONY : CurrentThread.cc.o
+
+CurrentThread.i: CurrentThread.cc.i
+.PHONY : CurrentThread.i
+
+# target to preprocess a source file
+CurrentThread.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/CurrentThread.cc.i
+.PHONY : CurrentThread.cc.i
+
+CurrentThread.s: CurrentThread.cc.s
+.PHONY : CurrentThread.s
+
+# target to generate assembly for a file
+CurrentThread.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/CurrentThread.cc.s
+.PHONY : CurrentThread.cc.s
+
 LogFile.o: LogFile.cc.o
 .PHONY : LogFile.o
 
@@ -310,6 +334,9 @@ help:
 	@echo "... AsyncLogging.o"
 	@echo "... AsyncLogging.i"
 	@echo "... AsyncLogging.s"
+	@echo "... CurrentThread.o"
+	@echo "... CurrentThread.i"
+	@echo "... CurrentThread.s"
 	@echo "... LogFile.o"
 	@echo "... LogFile.i"
 	@echo "... LogFile.s"
