@@ -18,8 +18,17 @@ public:
 
     int microSecondSinceEpoch() const {return microSecondSinceEpoch_;}
     static TimeStamp now();
-
+    static TimeStamp invalid()
+    {
+        return TimeStamp();
+    }
     static const int kMicroSecondsPerSecond = 1000  * 1000;
 private:
     int microSecondSinceEpoch_;
 };
+
+inline TimeStamp addTime(TimeStamp timeStamp,double seconds)
+{
+    int64_t delta = static_cast<int64_t>(seconds * TimeStamp::kMicroSecondsPerSecond);
+    return TimeStamp(timeStamp.microSecondSinceEpoch() + delta);
+}
