@@ -30,7 +30,9 @@ public:
 
     int index() {return index_;}
     void set_index(int indx){index_ = indx;}
-    
+
+    EventLoop* ownerLoop(){return loop_;}
+    void remove();
 
 private:
     static std::string eventsToString(int fd,int ev);
