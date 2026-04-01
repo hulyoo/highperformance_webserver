@@ -1,5 +1,0 @@
-/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles/edit_cache.dir
-/home/jl/share/cc_program/HighPerformance_WebServer/build/CMakeFiles/rebuild_cache.dir
-/home/jl/share/cc_program/HighPerformance_WebServer/build/src/CMakeFiles/server.dir
-/home/jl/share/cc_program/HighPerformance_WebServer/build/src/CMakeFiles/edit_cache.dir
-/home/jl/share/cc_program/HighPerformance_WebServer/build/src/CMakeFiles/rebuild_cache.dir
