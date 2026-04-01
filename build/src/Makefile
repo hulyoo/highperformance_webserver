@@ -154,6 +154,30 @@ AsyncLogging.cc.s:
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/AsyncLogging.cc.s
 .PHONY : AsyncLogging.cc.s
 
+Channel.o: Channel.cc.o
+.PHONY : Channel.o
+
+# target to build an object file
+Channel.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Channel.cc.o
+.PHONY : Channel.cc.o
+
+Channel.i: Channel.cc.i
+.PHONY : Channel.i
+
+# target to preprocess a source file
+Channel.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Channel.cc.i
+.PHONY : Channel.cc.i
+
+Channel.s: Channel.cc.s
+.PHONY : Channel.s
+
+# target to generate assembly for a file
+Channel.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Channel.cc.s
+.PHONY : Channel.cc.s
+
 CurrentThread.o: CurrentThread.cc.o
 .PHONY : CurrentThread.o
 
@@ -177,6 +201,30 @@ CurrentThread.s: CurrentThread.cc.s
 CurrentThread.cc.s:
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/CurrentThread.cc.s
 .PHONY : CurrentThread.cc.s
+
+EventLoop.o: EventLoop.cc.o
+.PHONY : EventLoop.o
+
+# target to build an object file
+EventLoop.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/EventLoop.cc.o
+.PHONY : EventLoop.cc.o
+
+EventLoop.i: EventLoop.cc.i
+.PHONY : EventLoop.i
+
+# target to preprocess a source file
+EventLoop.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/EventLoop.cc.i
+.PHONY : EventLoop.cc.i
+
+EventLoop.s: EventLoop.cc.s
+.PHONY : EventLoop.s
+
+# target to generate assembly for a file
+EventLoop.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/EventLoop.cc.s
+.PHONY : EventLoop.cc.s
 
 LogFile.o: LogFile.cc.o
 .PHONY : LogFile.o
@@ -298,6 +346,54 @@ TimeStamp.cc.s:
 	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimeStamp.cc.s
 .PHONY : TimeStamp.cc.s
 
+Timer.o: Timer.cc.o
+.PHONY : Timer.o
+
+# target to build an object file
+Timer.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Timer.cc.o
+.PHONY : Timer.cc.o
+
+Timer.i: Timer.cc.i
+.PHONY : Timer.i
+
+# target to preprocess a source file
+Timer.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Timer.cc.i
+.PHONY : Timer.cc.i
+
+Timer.s: Timer.cc.s
+.PHONY : Timer.s
+
+# target to generate assembly for a file
+Timer.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/Timer.cc.s
+.PHONY : Timer.cc.s
+
+TimerQueue.o: TimerQueue.cc.o
+.PHONY : TimerQueue.o
+
+# target to build an object file
+TimerQueue.cc.o:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimerQueue.cc.o
+.PHONY : TimerQueue.cc.o
+
+TimerQueue.i: TimerQueue.cc.i
+.PHONY : TimerQueue.i
+
+# target to preprocess a source file
+TimerQueue.cc.i:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimerQueue.cc.i
+.PHONY : TimerQueue.cc.i
+
+TimerQueue.s: TimerQueue.cc.s
+.PHONY : TimerQueue.s
+
+# target to generate assembly for a file
+TimerQueue.cc.s:
+	cd /home/jl/share/cc_program/HighPerformance_WebServer/build && $(MAKE) $(MAKESILENT) -f src/CMakeFiles/server.dir/build.make src/CMakeFiles/server.dir/TimerQueue.cc.s
+.PHONY : TimerQueue.cc.s
+
 test.o: test.cc.o
 .PHONY : test.o
 
@@ -334,9 +430,15 @@ help:
 	@echo "... AsyncLogging.o"
 	@echo "... AsyncLogging.i"
 	@echo "... AsyncLogging.s"
+	@echo "... Channel.o"
+	@echo "... Channel.i"
+	@echo "... Channel.s"
 	@echo "... CurrentThread.o"
 	@echo "... CurrentThread.i"
 	@echo "... CurrentThread.s"
+	@echo "... EventLoop.o"
+	@echo "... EventLoop.i"
+	@echo "... EventLoop.s"
 	@echo "... LogFile.o"
 	@echo "... LogFile.i"
 	@echo "... LogFile.s"
@@ -352,6 +454,12 @@ help:
 	@echo "... TimeStamp.o"
 	@echo "... TimeStamp.i"
 	@echo "... TimeStamp.s"
+	@echo "... Timer.o"
+	@echo "... Timer.i"
+	@echo "... Timer.s"
+	@echo "... TimerQueue.o"
+	@echo "... TimerQueue.i"
+	@echo "... TimerQueue.s"
 	@echo "... test.o"
 	@echo "... test.i"
 	@echo "... test.s"
