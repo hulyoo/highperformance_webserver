@@ -24,12 +24,15 @@ public:
     void disableReading(){events_ &= ~kReadEvent;update();}
     void enableWriting(){events_ |= kWriteEvent;update();}
     void disableWriting(){events_ &= ~kWriteEvent;update();}
-    void diableAll(){events_ = kNonEvent; update();}
+    void disableAll(){events_ = kNonEvent; update();}
     bool isWriting() const {return events_ & kWriteEvent;} 
     bool isReading() const {return events_ & kReadEvent;}
 
     int index() {return index_;}
+    int fd() const {return fd_;}
     void set_index(int indx){index_ = indx;}
+
+    void tie(const std::shared_ptr<void>& obj);
 
     EventLoop* ownerLoop(){return loop_;}
     void remove();

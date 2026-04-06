@@ -5,7 +5,7 @@ namespace CurrentThread
 {
     extern thread_local int t_cacheTid;
     extern thread_local char t_tidString[32];
-    extern thread_local int t_tidStringLegth;
+    extern thread_local int t_tidStringLength;
 
     void cacheTid();
 
@@ -25,6 +25,6 @@ namespace CurrentThread
 
     inline int tidStringLegth()
     {
-        return t_tidStringLegth;
+        return t_tidStringLength;
     }
 };

@@ -13,13 +13,15 @@ class TimerId;
 class TimerQueue
 {
 public:
+    using Entry = std::pair<TimeStamp,Timer*>;
+
     explicit TimerQueue(EventLoop* loop);
     ~TimerQueue();
 
+    TimerId addTimer(TimerCallback cb,TimeStamp when,double interval);
     void cancel(TimerId timerId);
 
 private:
-    using Entry = std::pair<TimeStamp,Timer*>;
     using TimerList = std::set<Entry>;
     using ActiveTimer = std::pair<Timer*,int64_t>;
     using ActiveTimerSet = std::set<ActiveTimer>;

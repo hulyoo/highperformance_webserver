@@ -91,9 +91,9 @@ inline LogLevel Logger::loglevel()
 
 #define LOG_INFO if(Logger::loglevel() <= LogLevel::INFO) \
     Logger(__FILE,__LINE__,LogLevel::INFO,__func__).stream()
-#define LOG_DEBUG if (Logger::logLevel() <= LogLevel::DEBUG) \
+#define LOG_DEBUG if (Logger::loglevel() <= LogLevel::DEBUG) \
     Logger(__FILE__,__LINE__,LogLevel::DEBUG,__func__).stream()
 #define LOG_WARN Logger(__FILE__,__LINE__,LogLevel::WARN,__func__).stream()
-#define LOG_ERROR Logger(__FILE___,__LINE__,LogLevel::ERROR,__func__).stream()
+#define LOG_ERROR Logger(__FILE__,__LINE__,LogLevel::ERROR,__func__).stream()
 #define LOG_FATAL Logger(__FILE__,__LINE__,LogLevel::FATAL,__func__).stream()
 

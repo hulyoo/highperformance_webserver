@@ -32,3 +32,13 @@ inline TimeStamp addTime(TimeStamp timeStamp,double seconds)
     int64_t delta = static_cast<int64_t>(seconds * TimeStamp::kMicroSecondsPerSecond);
     return TimeStamp(timeStamp.microSecondSinceEpoch() + delta);
 }
+
+inline bool operator<(TimeStamp lhs,TimeStamp rhs)
+{
+    return lhs.microSecondSinceEpoch() < rhs.microSecondSinceEpoch();
+}
+
+inline bool operator==(TimeStamp lhs,TimeStamp rhs)
+{
+    return lhs.microSecondSinceEpoch() == rhs.microSecondSinceEpoch();
+}

@@ -1,8 +1,10 @@
+#include "Thread.h"
+#include "CurrentThread.h"
+
 #include <sys/syscall.h>
 #include <unistd.h>
 #include <semaphore.h>
 
-#include "Thread.h"
 
 std::atomic_int Thread::numCreated_ = 0;
 
@@ -57,5 +59,14 @@ void Thread::setDefaultName()
         char buf[32];
         snprintf(buf,sizeof buf,"Thread%n",num);
         name_ = buf;
+    }
+}
+
+void CurrentThread::cacheTid()
+{
+    if(t_cacheTid == 0)
+    {
+        t_cacheTid = gettid();
+        t_tidStringLength = snprintf(t_tidString,sizeof t_tidString,"%5d",t_cacheTid);
     }
 }

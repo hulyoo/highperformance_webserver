@@ -41,3 +41,33 @@ LogStream& LogStream::operator<<(int v)
     formatInteger(v);
     return *this;
 }
+
+LogStream& LogStream::operator<<(unsigned int v)
+{
+    formatInteger(v);
+    return *this;
+}
+
+LogStream& LogStream::operator<<(long v)
+{
+    formatInteger(v);
+    return *this;
+}
+
+LogStream& LogStream::operator<<(long long v)
+{
+    formatInteger(v);
+    return *this;
+}
+
+LogStream& LogStream::operator<<(unsigned long v)
+{
+    formatInteger(v);
+    return *this;
+}
+
+LogStream& LogStream::operator<<(unsigned long long v)
+{
+    formatInteger(v);
+    return *this;
+}

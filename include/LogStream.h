@@ -68,6 +68,9 @@ void FixedBuffer<SIZE>::cookieEnd()
 {
 
 }
+
+
+
 class LogStream
 {
 public:
@@ -91,11 +94,23 @@ public:
 
     self &operator<<(std::string& str)
     {
-        buffer_.append(str.c_str(),str.length());
+        buffer_.append(str.c_str(),str.size());
+        return *this;
+    }
+
+    self& operator<<(const std::string& str)
+    {
+        buffer_.append(str.c_str(),str.size());
         return *this;
     }
 
     self &operator<<(int);
+    self &operator<<(unsigned int);
+    self &operator<<(long);
+    self &operator<<(long long);
+    self &operator<<(unsigned long);
+    self &operator<<(unsigned long long);
+
 
     void append(const char* data,int len){buffer_.append(data,len);}
     const Buffer& buffer(){return buffer_;}
