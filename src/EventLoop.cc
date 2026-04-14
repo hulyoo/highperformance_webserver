@@ -23,8 +23,8 @@ int createEventfd()
 
 EventLoop::EventLoop()
     :looping_(false)
-    , quit_(false),
-    eventHandling_(false)
+    ,quit_(false)
+    ,eventHandling_(false)
     ,callingPendingFunctors_(false)
     ,iteration_(0)
     ,threadId_(CurrentThread::tid())

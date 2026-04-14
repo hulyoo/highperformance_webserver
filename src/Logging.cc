@@ -1,9 +1,10 @@
-#include "Logging.h"
-#include "CurrentThread.h"
 #include <cstring>
 #include <cstdio>
 #include <cstdlib>
 #include <unistd.h>
+
+#include "Logging.h"
+#include "CurrentThread.h"
 
 LogLevel g_logLevel = LogLevel::DEBUG;
 Logger::outPutFunc g_output = [](const char*msg, int len){

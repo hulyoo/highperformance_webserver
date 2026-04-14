@@ -1,7 +1,7 @@
+#include <stdlib.h>
+
 #include "Poller.h"
 #include "EpollPoller.h"
-
-#include <stdlib.h>
 
 Poller* Poller::newDefaultPoller(EventLoop* loop)
 {

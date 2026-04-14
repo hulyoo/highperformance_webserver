@@ -1,7 +1,7 @@
 #pragma once
 
-#include <cstring>
 #include <functional>
+#include <cstring>
 #include "LogStream.h"
 #include "TimeStamp.h"
 

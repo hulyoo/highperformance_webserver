@@ -4,6 +4,7 @@
 #include <string>
 #include <stdio.h>
 #include <algorithm>
+#include <cstring>
 
 #include "Types.h"
 

@@ -1,9 +1,10 @@
 #pragma once
 
-#include "Noncopyable.h"
-#include "TimeStamp.h"
 #include <functional>
 #include <memory>
+
+#include "Noncopyable.h"
+#include "TimeStamp.h"
 
 class EventLoop;
 class Channel : noncopyable 
