@@ -89,8 +89,9 @@ inline LogLevel Logger::loglevel()
     return g_logLevel;
 }
 
+const char* strerror_tl(int savedErrno);
 #define LOG_INFO if(Logger::loglevel() <= LogLevel::INFO) \
-    Logger(__FILE,__LINE__,LogLevel::INFO,__func__).stream()
+    Logger(__FILE__,__LINE__,LogLevel::INFO,__func__).stream()
 #define LOG_DEBUG if (Logger::loglevel() <= LogLevel::DEBUG) \
     Logger(__FILE__,__LINE__,LogLevel::DEBUG,__func__).stream()
 #define LOG_WARN Logger(__FILE__,__LINE__,LogLevel::WARN,__func__).stream()

@@ -19,6 +19,7 @@ public:
     void setReadCallback(ReadEventCallback cb){readCallback_ = std::move(cb);}
     void setWriteCallback(EventCallback cb){writeCallback_ = std::move(cb);}
     void setCloseCallback(EventCallback cb){closeCallback_ = std::move(cb);}
+    void setErrorCallback(EventCallback cb){errorCallback_ = std::move(cb);}
     void handleEvent(TimeStamp receiveTime);
 
     void enableReading(){events_ |= kReadEvent;update();}
@@ -28,10 +29,13 @@ public:
     void disableAll(){events_ = kNonEvent; update();}
     bool isWriting() const {return events_ & kWriteEvent;} 
     bool isReading() const {return events_ & kReadEvent;}
+    bool isNoneEvent() const {return events_ == kNonEvent;}
 
+    void set_revents(int revt){revents_ = revt;}
     int index() {return index_;}
     int fd() const {return fd_;}
     void set_index(int indx){index_ = indx;}
+    int events() const {return events_;}
 
     void tie(const std::shared_ptr<void>& obj);
 

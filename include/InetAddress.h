@@ -12,6 +12,10 @@ public:
     explicit InetAddress(const struct sockaddr_in& addr)
         : addr_(addr)
     {}
+
+    explicit InetAddress(const struct sockaddr_in6& addr)
+	: addr6_(addr)
+    {}
    
     sa_family_t family() const {return addr_.sin_family;}
     std::string toIp() const;

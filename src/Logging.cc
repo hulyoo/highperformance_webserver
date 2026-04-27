@@ -6,6 +6,10 @@
 #include "Logging.h"
 #include "CurrentThread.h"
 
+thread_local char t_errnobuf[512];
+thread_local char t_time[64];
+thread_local time_t t_lastSecond;
+
 LogLevel g_logLevel = LogLevel::DEBUG;
 Logger::outPutFunc g_output = [](const char*msg, int len){
    size_t n = fwrite(msg,1,len,stdout); 
@@ -82,3 +86,10 @@ void Logger::Impl::finish()
 {
     stream_ << " - " << basename_.data_ << ':' << line_ << '\n';
 }
+
+const char* strerror_tl(int savedErrno)
+{
+    return strerror_r(savedErrno,t_errnobuf,sizeof t_errnobuf);
+}
+
+

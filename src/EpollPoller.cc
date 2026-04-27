@@ -57,4 +57,72 @@ TimeStamp EpollPoller::Poll(int timeoutMs,ChannelList* activeChannel)
     return now;
 }
 
+void EpollPoller::fillActiveChannel(int numEvents,ChannelList* activeChannel) const
+{
+    for(int i = 0; i < numEvents; i++)
+    {
+        Channel* channel = static_cast<Channel*>(events_[i].data.ptr);
+        channel->set_revents(events_[i].events);
+        activeChannel->push_back(channel);
+    }
+}
 
+void EpollPoller::updateChannel(Channel* channel)
+{
+    const int index = channel->index();
+
+    if(index == kNew || index == kDeleted)
+    {
+        int fd = channel->fd();
+        if(index == kNew)
+        {
+            channels_[fd] = channel;
+        }
+        else
+        {
+
+        }
+
+        channel->set_index(kAdded);
+        update(EPOLL_CTL_ADD,channel);
+    }
+    else
+    {
+        int fd = channel->fd();
+        if(channel->isNoneEvent())
+        {
+            update(EPOLL_CTL_DEL,channel);
+            channel->set_index(kDeleted);
+        }
+        else
+        {
+            update(EPOLL_CTL_MOD,channel);
+        }
+    }
+}
+
+void EpollPoller::removeChannel(Channel* channel)
+{
+    int fd = channel->fd();
+    int index = channel->index();
+    size_t n = channels_.erase(fd);
+    if(index == kAdded)
+    {
+        update(EPOLL_CTL_DEL,channel);
+    }
+    channel->set_index(kNew);
+
+}
+
+void EpollPoller::update(int operation,Channel* channel)
+{
+    struct epoll_event event;
+    memZero(&event,sizeof event);
+    event.events = channel->events();
+    event.data.ptr = channel;
+    int fd = channel->fd();
+    if(::epoll_ctl(epollfd_,operation,fd,&event) < 0)
+    {
+        LOG_FATAL<<"epoll_ctl op = " << operation << " fd = "<<fd;
+    }
+}
